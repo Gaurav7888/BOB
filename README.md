@@ -1,6 +1,8 @@
 # BOB
 ## BOB Hackathon
 
+Checkout our work as a <a href="https://gaurav7888-bob-app-4dihn7.streamlit.app/">**Streamlit WebApp.</a>
+
 Customer Segmentation
 
 There are many features that can be used to segment customers using bank details for machine learning. Some examples of these features include:
