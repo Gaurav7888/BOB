@@ -3,7 +3,7 @@
 
 Checkout our work as a <a href="https://gaurav7888-bob-app-4dihn7.streamlit.app/">**Streamlit WebApp.**</a>
 
-<img src="screenshots/Screenshot from 2023-01-09 23-50-31.png">
+
 This is a Machine Learning Centric project. In this project, we have trained different ML models on four datasets and deeply analyzed all the data from the AA to come up with 5 major features that might help stakeholders(banks, business, etc.) as well as the customers. 
 The 5 features we are offering are briefed below:
 
