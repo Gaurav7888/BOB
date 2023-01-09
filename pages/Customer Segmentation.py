@@ -26,7 +26,7 @@ st.write("Based on amount spending in each categories")
 
 @st.cache(allow_output_mutation=True)
 def data_load():
-    customer_data = pd.read_csv('/home/gaurav/Documents/BOB/static/the_data_cluster.csv')
+    customer_data = pd.read_csv('static/the_data_cluster.csv')
     customer_data.drop(['Channel','Region'],axis=1,inplace=True)
     return customer_data
 
