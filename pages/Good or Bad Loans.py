@@ -20,7 +20,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("/home/gaurav/Documents/BOB/static/accepted_2007_to_2018Q4.csv")
+df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
 
 st.write(df)
 
