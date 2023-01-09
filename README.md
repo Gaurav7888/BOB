@@ -16,6 +16,17 @@ Demographic information: This can include features such as age, gender, income l
 
 Using these types of features, it is possible to segment customers into different groups based on their financial behaviors and characteristics. This can be useful for targeting marketing campaigns, identifying potential cross-selling opportunities, and predicting customer churn.
 
+**Spending Analysis**
+
+1) Transaction amount: The amount of money that the customer spends on each transaction can be a useful feature for identifying patterns in their spending habits.
+2) Transaction category: The category of each transaction, such as groceries, restaurants, or entertainment, can be useful for understanding the types of expenses that the customer incurs.
+3) Merchant name: The name of the merchant that the customer makes a purchase from can be useful for understanding their spending habits and preferences.
+4) Transaction date and time: The date and time of each transaction can be used to identify trends in the customer's spending, such as whether they tend to make more purchases on certain days of the week or at certain times of day.
+5) Payment method: The method of payment used for each transaction, such as cash, credit card, or debit card, can be useful for understanding the customer's preferences and habits.
+
+Using these types of features, it is possible to analyze a customer's spending patterns and understand their financial behaviors and preferences. This can be useful for identifying opportunities for financial planning or budgeting, or for targeting marketing campaigns.
+
+
 **Fraud**
 
 There are a few different ways that bank details can be used for fraud detection:
