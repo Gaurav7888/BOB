@@ -4,7 +4,7 @@ import pandas as pd
 st.title("Classifying Fraudulent and Valid Transactions")
 
 
-data = pd.read_csv('/home/gaurav/Documents/BOB/static/fraud.csv')
+data = pd.read_csv('static/fraud.csv')
 
 
 st.write(data)
