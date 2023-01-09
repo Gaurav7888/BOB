@@ -23,7 +23,7 @@ from sklearn.cluster import KMeans
 
 @st.cache(allow_output_mutation=True)
 def data_load():
-    customer_data = pd.read_csv('/home/gaurav/Documents/BOB/static/Customers-segmentation-dataset.csv')
+    customer_data = pd.read_csv('static/Customers-segmentation-dataset.csv')
     return customer_data
 
 data = data_load()
