@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("UPI CASHFLOW & WEALTH MANAGEMENT")
-st.image("1.png")
+st.image("static/1 (1).png")
 
 st.header("1.Payment History")
 st.header("2.Credit Score Governing Factors")
