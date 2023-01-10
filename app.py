@@ -3,7 +3,7 @@ import streamlit as st
 st.markdown("# Main page")
 st.sidebar.markdown(" :)( ")
 
-st.title("Bank Of Baroda")
+st.title("Bank Of Baroda Hackathon")
   
 st.write("Customer Segmentation")
 st.write("Dataset contains the following information")
