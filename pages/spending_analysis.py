@@ -12,6 +12,9 @@ st.write("Dataset Overview")
 
 st.write(data)
 
+st.write("Graphs are being generated using Tableau")
+st.write("https://prod-apnortheast-a.online.tableau.com/#/site/gauravsarkar/workbooks/847253?:origin=card_share_link")
+
 st.image("screenshots/Screenshot from 2023-01-11 03-01-53.png")
 
 st.image("screenshots/Screenshot from 2023-01-11 03-01-43.png")
