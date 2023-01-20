@@ -1,5 +1,8 @@
 import streamlit as st
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 st.write("Good Loans and Bad loans")
 df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
 
@@ -18,10 +21,7 @@ st.write("We have a lot of features but we got this top 9 features using Logisti
 
 
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
 
