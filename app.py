@@ -5,7 +5,7 @@ st.sidebar.markdown(" :)( ")
 
 st.title("Bank Of Baroda Hackathon")
   
-st.write("Customer Segmentation")
+st.header("1. Customer Segmentation")
 st.write("Dataset contains the following information")
 st.write("Gender :- which can be predicted using name or can be directly access")
 st.write("Age :- Age can be calculated as we have the date of birth of each customer")
@@ -28,7 +28,7 @@ def data_load():
 
 data = data_load()
 
-st.write("Dataset overview")
+st.write("Dataset overview - This dataset contains factors based on which spending score is calculated") 
 st.write(data)
 st.write("stats overview")
 st.write(data.describe())
