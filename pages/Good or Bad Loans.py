@@ -1,5 +1,8 @@
 import streamlit as st
 
+st.write("Good Loans and Bad loans")
+df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
+
 st.write("Dataset Overview For Good/Bad Loan")
 st.write("'term' : The number of payments on the loan, where values are in months and can be either 36 or 60.")
 st.write("'int_rate :  The interest rate on the loan")
