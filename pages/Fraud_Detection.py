@@ -6,7 +6,7 @@ st.title("Classifying Fraudulent and Valid Transactions")
 
 data = pd.read_csv('static/fraud.csv')
 
-
+st.write("Dataset Overview")
 st.write(data)
 
 st.write("""step - integer - maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation).
