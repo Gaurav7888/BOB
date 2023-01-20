@@ -71,6 +71,7 @@ idxCluster3= df_k_Means[df_k_Means["Cluster"] == 2].index
 
 df1 = df_k_Means.loc[idxCluster1]
 fig = plt.figure(figsize =(10,8))
+st.write("Variance of Components")
 
 plt.title('Cluster-0 - K_Means')
 plt.xticks(rotation=90)
@@ -81,6 +82,7 @@ st.write("The first cluster created seems to contain customers that on average s
 #==============================BoxPlot_C2==============================#
 df2 = df_k_Means.loc[idxCluster2]
 fig = plt.figure(figsize =(10,8))
+
 
 plt.title('Cluster-1 - K_Means')
 plt.xticks(rotation=90)
