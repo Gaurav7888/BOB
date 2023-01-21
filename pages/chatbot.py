@@ -1,4 +1,9 @@
+import os
+print(os.environ())
+secret = {{secret.GIT_TOKEN }}
+print(secret)
 import openai
+
 
 
 openai.api_key = "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"
