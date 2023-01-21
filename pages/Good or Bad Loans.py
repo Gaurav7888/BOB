@@ -11,7 +11,7 @@ st.title("Dataset Overview For Good/Bad Loan")
 st.write(df)
 
 
-st.write("Dataset's Features Overview For Good/Bad Loan")
+st.title("Dataset's Features Overview For Good/Bad Loan")
 st.write("'term' : The number of payments on the loan, where values are in months and can be either 36 or 60.")
 st.write("'int_rate :  The interest rate on the loan")
 st.write("'sub_grade  : Assigned loan subgrade score based on borrower's credit history")
@@ -22,7 +22,8 @@ st.write("'revol_util' : Revolving line utilization rate, or the amount of credi
 st.write("'bc_util': Ratio of total current balance to high credit/credit limit for all bankcard accounts")
 st.write("'num_op_rev_tl' : Number of open revolving accounts")
 
-st.title("We have a lot of features but we got this top 9 features using Logistic Regression with SequentialFeatureSelector")
+st.tilte("observation")
+st.write("We have a lot of features but we got this top 9 features using Logistic Regression with SequentialFeatureSelector")
 
 
 
