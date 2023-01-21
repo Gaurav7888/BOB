@@ -16,7 +16,7 @@ st.title("Classifying Fraudulent and Valid Transactions")
 
 data = pd.read_csv('static/fraud.csv')
 
-st.write("Dataset Overview")
+st.title("Dataset Overview")
 st.write(data)
 
 st.write("""step - integer - maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation).
@@ -65,7 +65,7 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.1,random_state=1)
 
 model=DecisionTreeClassifier()
 model.fit(x_train,y_train)
-st.write("Decison Tree accuracy on test data :-")
+st.title("Decison Tree accuracy on test data :-")
 st.write(model.score(x_test,y_test))
 
 st.write("Lets try to take info from bob api")
