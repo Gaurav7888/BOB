@@ -66,7 +66,7 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.1,random_state=1)
 model=DecisionTreeClassifier()
 model.fit(x_train,y_train)
 st.write("Decison Tree accuracy on test data :-")
-st.write(model.score(x_test,y_test) + "%")
+st.write(model.score(x_test,y_test))
 
 st.write("Lets try to take info from bob api")
 st.write("This is the detail of one of the transaction")
