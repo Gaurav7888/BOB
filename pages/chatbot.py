@@ -1,4 +1,4 @@
 import os
-print(os.environ())
 secret = {{secret.GIT_TOKEN }}
 print(secret)
+print('KEY' in os.environ)
