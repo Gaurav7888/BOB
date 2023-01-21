@@ -4,10 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.write("Good Loans and Bad loans")
+st.title("Good Loans and Bad loans")
 df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
 
-st.write("Dataset Overview For Good/Bad Loan")
+st.title("Dataset Overview For Good/Bad Loan")
 st.write(df)
 
 
@@ -22,7 +22,7 @@ st.write("'revol_util' : Revolving line utilization rate, or the amount of credi
 st.write("'bc_util': Ratio of total current balance to high credit/credit limit for all bankcard accounts")
 st.write("'num_op_rev_tl' : Number of open revolving accounts")
 
-st.write("We have a lot of features but we got this top 9 features using Logistic Regression with SequentialFeatureSelector")
+st.title("We have a lot of features but we got this top 9 features using Logistic Regression with SequentialFeatureSelector")
 
 
 
@@ -60,7 +60,7 @@ df_temp['num_op_rev_tl'] = df_temp['num_op_rev_tl'].fillna(value=0)
 df_temp = df_temp[df_temp['emp_length'] > 0]
 df_temp = pd.get_dummies(df_temp)
 
-st.write("Preprocessed Data + Feature Engineering")
+st.title("Preprocessed Data + Feature Engineering")
 st.write(df_temp)
 
 from sklearn.model_selection import train_test_split #for split the data
@@ -78,7 +78,7 @@ X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.3,random_state=
 fig = plt.figure(figsize=(20,25))
 sns.heatmap(df.corr())
 
-st.write("HeatMap for the different features")
+st.title("HeatMap for the different features")
 st.pyplot(fig)
 
 from sklearn.preprocessing import MaxAbsScaler
@@ -86,7 +86,7 @@ scaler = MaxAbsScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-st.write("We have built different ML models to see their performance")
+st.title("We have built different ML models to see their performance")
 
 from sklearn.linear_model import LogisticRegression
 
