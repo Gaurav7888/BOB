@@ -62,10 +62,16 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.1,random_state=1)
 
 model=DecisionTreeClassifier()
 model.fit(x_train,y_train)
-
+st.write("Decison Tree accuracy on test data :-")
 st.write(model.score(x_test,y_test))
 
-features = np.array([[4, 9000.60, 9000.60, 0.0]])
+st.write("Lets try to take info from bob api")
+st.write("This is the detail of one of the transaction")
+st.write("Type Amount Balance")
+
+st.write("DEBIT	10070.00	51070.50")	
+
+features = np.array([[5, 10070.00, 51070.50, 41000.50]])
 st.write("Test data")
 st.write(features)
 st.write(model.predict(features))
