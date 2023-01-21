@@ -22,7 +22,7 @@ st.write("'revol_util' : Revolving line utilization rate, or the amount of credi
 st.write("'bc_util': Ratio of total current balance to high credit/credit limit for all bankcard accounts")
 st.write("'num_op_rev_tl' : Number of open revolving accounts")
 
-st.tilte("observation")
+st.title("observation")
 st.write("We have a lot of features but we got this top 9 features using Logistic Regression with SequentialFeatureSelector")
 
 
