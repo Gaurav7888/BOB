@@ -3,10 +3,15 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 st.write("Good Loans and Bad loans")
 df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
 
 st.write("Dataset Overview For Good/Bad Loan")
+st.write(df)
+
+
+st.write("Dataset's Features Overview For Good/Bad Loan")
 st.write("'term' : The number of payments on the loan, where values are in months and can be either 36 or 60.")
 st.write("'int_rate :  The interest rate on the loan")
 st.write("'sub_grade  : Assigned loan subgrade score based on borrower's credit history")
@@ -23,9 +28,6 @@ st.write("We have a lot of features but we got this top 9 features using Logisti
 
 
 
-df = pd.read_csv("static/accepted_2007_to_2018Q4.csv")
-
-st.write(df)
 
 df['loan_status'].value_counts()
 
@@ -58,7 +60,9 @@ df_temp['num_op_rev_tl'] = df_temp['num_op_rev_tl'].fillna(value=0)
 df_temp = df_temp[df_temp['emp_length'] > 0]
 df_temp = pd.get_dummies(df_temp)
 
+st.write("Preprocessed Data + Feature Engineering")
 st.write(df_temp)
+
 from sklearn.model_selection import train_test_split #for split the data
 from sklearn.metrics import accuracy_score  #for accuracy_score
 from sklearn.model_selection import KFold #for K-fold cross validation
@@ -73,12 +77,16 @@ X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.3,random_state=
 
 fig = plt.figure(figsize=(20,25))
 sns.heatmap(df.corr())
+
+st.write("HeatMap for the different features")
 st.pyplot(fig)
 
 from sklearn.preprocessing import MaxAbsScaler
 scaler = MaxAbsScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
+
+st.write("We have built different ML models to see their performance")
 
 from sklearn.linear_model import LogisticRegression
 
@@ -87,7 +95,7 @@ model.fit(X_train,y_train)
 pred_lr = model.predict(X_test)
 st.write("Logistic Regression")
 st.write('Accuracy of Logistic Regression: {:.2f}'.format(accuracy_score(pred_lr,y_test)*100))
-
+st.write("*"*20)
 from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier()
@@ -95,7 +103,7 @@ model.fit(X_train,y_train)
 pred_lr = model.predict(X_test)
 st.write("RandomForestClassifier")
 st.write('Accuracy of RandomForestClassifier: {:.2f}'.format(accuracy_score(pred_lr,y_test)*100))
-
+st.write("*"*20)
 
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -104,7 +112,7 @@ model.fit(X_train,y_train)
 pred_lr = model.predict(X_test)
 st.write("KNeighborsClassifier")
 st.write('Accuracy of KNeighborsClassifier: {:.2f}'.format(accuracy_score(pred_lr,y_test)*100))
-
+st.write("*"*20)
 from sklearn.ensemble import GradientBoostingClassifier
 
 model = GradientBoostingClassifier(n_estimators=200)
